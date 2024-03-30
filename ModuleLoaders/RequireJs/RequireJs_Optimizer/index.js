@@ -17,6 +17,9 @@ require.config({
             location : "Location",
             products : "Products",
             lodashMod : "lodash.min",
+            bootstrap : "../node_modules/bootstrap/dist/js/bootstrap.min",
+            popper : "../node_modules/@popperjs/core/dist/umd/popper.min",
+            jquery : "jquery/dist/jquery"
       } ,
       // packages :[{
       //       name : "lodash",
@@ -26,5 +29,5 @@ require.config({
       // Map :{
       //        location : "libs/Location",
       //       products : "libs/Products"
-      // }
+      // }C:\Users\SURBHI SINHA\Documents\JS_training\ModuleLoaders\RequireJs\RequireJs_Optimizer\node_modules\@popperjs\core\dist\umd\popper.min.js
 })
