@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <p>Require JS sample page.</p>
+
+      <p class = "firstPara"></p>
+      <p class="secondPara"></p>
+      <script data-main = "index" src = "./require.js"></script>
+      <script>
+            // alert("before the index file");
+            require(['index'], function(){
+                  // alert("after the index file");
+                  require(['utils/JqueryDum'])
+                  // alert("after the utils/jqueryDum file")
+            })
+      </script>
+</body>
+</html>
