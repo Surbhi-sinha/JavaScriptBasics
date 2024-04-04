@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <script src ="node_modules/systemjs/dist/system.js"></script>
+      <script type="systemjs-importmap">
+            {
+                  "imports": {
+                        "products" : "./Modules/Products.js",
+                        "lodash":"./node_modules/lodash/lodash.js"
+                  }
+            }
+            
+      </script>
+    
+</head>
+<body>
+      <script>
+            // systemJS moduler for the Custom modules
+            System.import('products').then(function(products){
+                  console.log(products.default);
+            })
+
+
+            //SystemJS moduler for the NPM modules
+            System.import('lodash').then(function (_) {
+            function sortObjectsByProperty(array, property) {
+                return _.sortBy(array, property);
+            }
+
+            let objects = [
+                { 'name': 'John', 'age': 30 },
+                { 'name': 'Jane', 'age': 20 },
+                { 'name': 'Jim', 'age': 25 }
+            ];
+
+            let sortedObjects = sortObjectsByProperty(objects, 'age');
+
+            console.log(sortedObjects);
+        })
+
+      </script>
+</body>
+</html>

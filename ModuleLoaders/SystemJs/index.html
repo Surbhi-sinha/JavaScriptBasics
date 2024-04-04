@@ -4,17 +4,22 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
-      <script src="lib/systemjs/dist/system.min.js"></script>
+      <script src="lib/systemjs/dist/system.js"></script>
       <!-- system configurations -->
-      <script>
-           System.config({
-            map:{
-                "products" : "./products.js"
-            }
-        })
+
+      <script type="systemjs-importmap">
+        {
+          "imports": {
+            "products":"./scripts/Products"
+          }
+        }
       </script>
 </head>
 <body>
-      
+      <script>
+        System.import('products').then(function(products){
+          console.log(products.default);
+        })
+      </script>
 </body>
 </html>
