@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="node_modules/@grapecity/spread-sheets/dist/gc.spread.sheets.all.min.js"></script>
+
+    <!-- excel -->
+    <!-- <script src="node_modules/@grapecity/spread-excelio/dist/gc.spread.excelio.min.js"></script>
+    <script src="node_modules/@grapecity/spread-sheets-io/dist/gc.spread.sheets.io.min.js"></script> -->
+    <!-- /excel -->
+
+    <!-- pdf -->
+     <script src="node_modules/@grapecity/spread-sheets-charts/dist/gc.spread.sheets.charts.min.js"></script>
+     <script src="node_modules/@grapecity/spread-sheets-pdf/dist/gc.spread.sheets.pdf.min.js"></script>
+     <script src="node_modules/@grapecity/spread-sheets-print/dist/gc.spread.sheets.print.min.js"></script>
+     <!-- /pdf -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@grapecity/spread-sheets/styles/gc.spread.sheets.excel2016colorful.css"
+    />
+    <style>
+      .spread-Container {
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="spread-Container" id="ss"></div>
+    <!-- for CSV -->
+    <!-- <input type="button" id="button1" value="button1" />
+    <input type="button" id="button2" value="button2" /> -->
+    <!-- <script src="index.js"></script> -->
+
+
+    <!-- excel -->
+    <!-- <input type="file" name="files[]" id="fileDemo" accept=".xlsx" />
+    <input type="button" id="loadExcel" value="Import" onclick="ImportFile()" />
+    <input
+      type="button"
+      class="btn btn-default"
+      id="saveExcel"
+      value="Export"
+      onclick="ExportFile()"
+    />
+    <input
+      type="text"
+      id="exportFileName"
+      placeholder="Export file name"
+      class="form-control"
+      value="export.xlsx"
+    />
+    <script src="ExcelIO.js"></script> -->
+    <!-- /excel -->
+
+    <script src="pdfIO.js"></script>
+  </body>
+</html>

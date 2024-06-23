@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@grapecity/spread-excelio": "^17.0.10",
+    "@grapecity/spread-sheets": "^17.0.10",
+    "@grapecity/spread-sheets-charts": "^17.0.10",
+    "@grapecity/spread-sheets-io": "^17.0.10",
+    "@grapecity/spread-sheets-pdf": "^17.0.10",
+    "@grapecity/spread-sheets-print": "^17.0.10"
+  }
+}
