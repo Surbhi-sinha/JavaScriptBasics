@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@grapecity/spread-sheets": "^17.0.10"
+  }
+}
